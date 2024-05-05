@@ -91,7 +91,7 @@ RUN set -eux; \
 RUN set -eux; \
         \
         savedAptMark="$(apt-mark showmanual)"; \
-        apt-get update && apt-get install -y --no-install-recommends \
+        apt-get update && apt-get install -y  \
 	curl \
 	iproute2 \
 	wget \
